@@ -1,0 +1,46 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background glow -->
+  <circle cx="120" cy="120" r="100" fill="url(#paint0_radial)" />
+  
+  <!-- Left heart -->
+  <path d="M90 100C90 89 95 80 105 80C115 80 120 89 120 100C120 111 110 120 100 130C90 120 80 111 80 100C80 89 85 80 95 80C100 80 90 89 90 100Z" fill="#F472B6" />
+  
+  <!-- Right heart -->
+  <path d="M150 100C150 89 145 80 135 80C125 80 120 89 120 100C120 111 130 120 140 130C150 120 160 111 160 100C160 89 155 80 145 80C140 80 150 89 150 100Z" fill="#F472B6" />
+  
+  <!-- Sync waves -->
+  <path class="wave" d="M70 120C90 120 90 100 120 100C150 100 150 120 170 120" stroke="#EC4899" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 5" />
+  <path class="wave" d="M70 130C90 130 90 110 120 110C150 110 150 130 170 130" stroke="#EC4899" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 5" />
+  <path class="wave" d="M70 140C90 140 90 120 120 120C150 120 150 140 170 140" stroke="#EC4899" stroke-width="1" stroke-linecap="round" stroke-dasharray="1 5" />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120 120) rotate(90) scale(100)">
+      <stop stop-color="#FCE7F3" />
+      <stop offset="1" stop-color="#FCE7F3" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Animation for waves -->
+    <style>
+      .wave {
+        animation: wave 2s ease-in-out infinite;
+      }
+      @keyframes wave {
+        0%, 100% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+      
+      .wave:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      
+      .wave:nth-child(5) {
+        animation-delay: 0.6s;
+      }
+    </style>
+  </defs>
+</svg>
